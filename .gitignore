@@ -1,2 +1,5 @@
 # IDE files
 .idea/
+
+styles/*.css
+styles/*.css.map

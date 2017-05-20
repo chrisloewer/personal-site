@@ -1,0 +1,50 @@
+
+body {
+  margin: 0;
+  height: 300vh;;
+}
+
+.main-content {
+  height: 100vh;
+  background-color: #DDD;
+  position: relative;
+}
+
+.content-section {
+  position: fixed;
+  top: 0;
+  background-color: #851713;
+  height: 100%;
+  width: 50%;
+  color: white;
+}
+.content-section.open {
+  width: 80%;
+}
+
+.header-section {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.vc-container::before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.vc-content {
+  display: inline-block;
+  vertical-align: middle;
+  width: 90%;
+  margin: 50px 0;
+  margin-left: 5%;
+}
+
+.center {
+  text-align: center;
+}
