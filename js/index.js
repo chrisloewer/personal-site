@@ -1,10 +1,12 @@
 
 function expandIntro() {
   $('#intro-content').addClass('open');
+  $('#intro-header').addClass('open');
 }
 
 function collapseIntro() {
   $('#intro-content').removeClass('open');
+  $('#intro-header').removeClass('open');
 }
 
 window.addEventListener('load', function () {
