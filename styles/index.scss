@@ -2,13 +2,16 @@
 
 body {
   margin: 0;
-  height: 300vh;;
 }
 
 .main-content {
   height: 100vh;
   background-color: #DDD;
   position: relative;
+}
+
+.bg-section {
+  height: 250vh;
 }
 
 .content-section {
@@ -50,6 +53,23 @@ body {
     width: 80%;
     @include transition(all 0.6s);
   }
+}
+
+.below-fold {
+  position: relative;
+  z-index: 5;
+}
+
+.img-section {
+  height: 600px;
+  background: #CCCCCC;
+  background: url("../resources/thermos.jpg")  no-repeat fixed center;
+  background-size: cover;
+}
+
+.project-section {
+  height: 800px;
+  background: #CCCCCC;
 }
 
 
