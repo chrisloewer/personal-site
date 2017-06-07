@@ -2,11 +2,27 @@
 
 body {
   margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #EEE;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Bungee Inline', cursive;
+}
+
+.title {
+  font-family: 'Bungee Inline', cursive;
+  font-size: 5em;
+  line-height: 100%;
+}
+
+p {
+  font-size: 1.4em;
+  font-weight: 600;
 }
 
 .main-content {
   height: 100vh;
-  background-color: #DDD;
   position: relative;
 }
 
@@ -17,7 +33,6 @@ body {
 .content-section {
   position: fixed;
   top: 0;
-  //background-color: #851713;
   background: url("../resources/profile.png") no-repeat center;
   background-size: cover;
   height: 100%;
@@ -38,6 +53,8 @@ body {
 
   .vc-content {
     z-index: 2;
+    opacity: 0;
+    @include transition(opacity 0.3s);
   }
 }
 .content-section.open {
@@ -46,6 +63,11 @@ body {
   .bg-filter {
     background: rgba(99,0,0, 0.8);
     @include transition(background 0.6s);
+  }
+
+  .vc-content {
+    opacity: 1;
+    @include transition(opacity 0.6s 0.6s);
   }
 }
 
@@ -83,15 +105,15 @@ body {
 }
 
 .img-section {
-  height: 600px;
-  background: #CCCCCC;
-  background: url("../resources/thermos.jpg")  no-repeat fixed center;
+  height: 200px;
+  background: #EEE;
+  background: url("../resources/pattern.png")  no-repeat fixed center;
   background-size: cover;
 }
 
 .project-section {
   height: 800px;
-  background: #CCCCCC;
+  background: #EEE;
 }
 
 
