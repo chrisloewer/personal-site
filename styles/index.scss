@@ -2,23 +2,28 @@
 
 body {
   margin: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
   background: #EEE;
 }
 
 h1, h2, h3, h4 {
-  font-family: 'Bungee Inline', cursive;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 700;
 }
 
 .title {
-  font-family: 'Bungee Inline', cursive;
-  font-size: 5em;
-  line-height: 100%;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 3em;
+  font-weight: 700;
 }
 
 p {
-  font-size: 1.4em;
-  font-weight: 600;
+  font-size: 1.2em;
+  font-weight: 300;
+}
+
+.italic {
+  font-style: italic;
 }
 
 .main-content {
@@ -30,7 +35,7 @@ p {
   height: 250vh;
 }
 
-.content-section {
+.intro-content-section {
   position: fixed;
   top: 0;
   background: url("../resources/profile.png") no-repeat center;
@@ -52,12 +57,17 @@ p {
   }
 
   .vc-content {
+    margin: 50px 0 50px 5%;
     z-index: 2;
     opacity: 0;
     @include transition(opacity 0.3s);
   }
+
+  .title {
+    line-height: 100%;
+  }
 }
-.content-section.open {
+.intro-content-section.open {
   width: 85%;
 
   .bg-filter {
@@ -105,18 +115,18 @@ p {
 }
 
 .img-section {
-  height: 200px;
+  height: 20vh;
+  line-height: 20vh;
   background: #EEE;
   background: url("../resources/pattern.png")  no-repeat fixed center;
   background-size: cover;
+  text-align: center;
 }
 
-.project-section {
+.content-section {
   height: 800px;
   background: #EEE;
 }
-
-
 
 .vc-container::before {
   content: '';
@@ -124,16 +134,36 @@ p {
   height: 100%;
   vertical-align: middle;
 }
-
 .vc-content {
   position: relative;
   display: inline-block;
   vertical-align: middle;
   width: 90%;
-  margin: 50px 0;
-  margin-left: 5%;
+  margin: 0 auto;
 }
-
 .center {
   text-align: center;
+}
+
+// Tablet and bigger
+// --------------------------------------------------------------------------------------------------------------
+@media (min-width: 650px) {
+  p {
+    font-size: 1.4em;
+  }
+
+  .title {
+    font-size: 4em;
+  }
+
+}
+
+
+// Laptops and bigger
+// --------------------------------------------------------------------------------------------------------------
+@media (min-width: 960px) {
+  .title {
+    font-size: 5em;
+  }
+
 }
