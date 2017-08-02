@@ -57,6 +57,7 @@ p {
   }
 
   .vc-content {
+    max-width: inherit;
     margin: 50px 0 50px 5%;
     z-index: 2;
     opacity: 0;
@@ -139,6 +140,7 @@ p {
   display: inline-block;
   vertical-align: middle;
   width: 90%;
+  max-width: 700px;
   margin: 0 auto;
 }
 .center {
