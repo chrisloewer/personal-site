@@ -147,6 +147,26 @@ p {
   text-align: center;
 }
 
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .thumb {
+    width: 80%;
+    margin: 0 auto;
+
+    img {
+      width: 100%;
+      max-width: 320px;
+    }
+  }
+
+  .description {
+    text-align: left;
+  }
+}
+
 // Tablet and bigger
 // --------------------------------------------------------------------------------------------------------------
 @media (min-width: 650px) {
@@ -156,6 +176,26 @@ p {
 
   .title {
     font-size: 4em;
+  }
+
+  .project {
+    flex-direction: row;
+
+    .thumb {
+      width: 0;
+      height: 100%;
+      flex-grow: 3;
+
+      img {
+        vertical-align: middle;
+      }
+    }
+
+    .description {
+      width: 0;
+      flex-grow: 5;
+      padding-left: 50px;
+    }
   }
 
 }
