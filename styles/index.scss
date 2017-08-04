@@ -125,8 +125,8 @@ p {
 }
 
 .content-section {
-  height: 800px;
   background: #EEE;
+  padding: 100px 0;
 }
 
 .vc-container::before {
@@ -155,6 +155,7 @@ p {
   .thumb {
     width: 80%;
     margin: 0 auto;
+    order: 1;
 
     img {
       width: 100%;
@@ -164,6 +165,7 @@ p {
 
   .description {
     text-align: left;
+    order: 2;
   }
 }
 
@@ -176,6 +178,10 @@ p {
 
   .title {
     font-size: 4em;
+  }
+
+  .content-section {
+    padding: 200px 0;
   }
 
   .project {
@@ -194,7 +200,19 @@ p {
     .description {
       width: 0;
       flex-grow: 5;
-      padding-left: 50px;
+      padding: 0 0 0 50px;
+    }
+  }
+
+  .project.reverse {
+    .thumb {
+      order: 2;
+    }
+
+    .description {
+      order: 1;
+      padding: 0 50px 0 0;
+      text-align: right;
     }
   }
 
@@ -206,6 +224,10 @@ p {
 @media (min-width: 960px) {
   .title {
     font-size: 5em;
+  }
+
+  .content-section {
+    padding: 250px 0;
   }
 
 }
