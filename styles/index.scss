@@ -22,8 +22,20 @@ p {
   font-weight: 300;
 }
 
+a {
+  color: inherit;
+}
+
 .italic {
   font-style: italic;
+}
+
+hr {
+  border: 0;
+  width: 50%;
+  height: 2px;
+  background-color: #000000;
+  margin: 40px auto;
 }
 
 .main-content {
@@ -116,8 +128,8 @@ p {
 }
 
 .img-section {
-  height: 20vh;
-  line-height: 20vh;
+  height: 15vh;
+  line-height: 15vh;
   background: #EEE;
   background: url("../resources/pattern.png")  no-repeat fixed center;
   background-size: cover;
@@ -166,6 +178,11 @@ p {
   .description {
     text-align: left;
     order: 2;
+
+    .subtext {
+      font-style: italic;
+      font-size: 0.9em;
+    }
   }
 }
 
@@ -176,8 +193,17 @@ p {
     font-size: 1.4em;
   }
 
+  hr {
+    margin: 60px auto;
+  }
+
   .title {
     font-size: 4em;
+  }
+
+  .img-section {
+    height: 20vh;
+    line-height: 20vh;
   }
 
   .content-section {
@@ -201,6 +227,10 @@ p {
       width: 0;
       flex-grow: 5;
       padding: 0 0 0 50px;
+
+      .subtext {
+        font-size: 1em;
+      }
     }
   }
 
@@ -228,6 +258,10 @@ p {
 
   .content-section {
     padding: 250px 0;
+  }
+
+  .vc-content {
+    max-width: 900px;
   }
 
 }
