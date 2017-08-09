@@ -9,10 +9,19 @@ function collapseIntro() {
   $('#intro-header').removeClass('open');
 }
 
+function getWindowScrollY() {
+  if(window.scrollY !== undefined) {
+    return window.scrollY;
+  }
+  else {
+    return document.documentElement.scrollTop;
+  }
+}
+
 window.addEventListener('load', function () {
 
-  function introController() {
-    var breakpoint = 400;
+  function introScrollController() {
+    var breakpoint = 300;
     var currentPosition = getWindowScrollY();
 
     if(currentPosition > breakpoint) {
@@ -23,17 +32,12 @@ window.addEventListener('load', function () {
     }
   }
 
-  window.addEventListener('scroll', introController, false);
-  introController();
+  window.addEventListener('scroll', introScrollController, false);
+  introScrollController();
+
+  // TODO handle the disappearing url nav bar on mobile devices
+  // Override resize of above-fold content for mobile devices - due to hiding url bar
+  // $('#intro-content').css({ height: $(window).height() + 100 });
+  // $('#intro-header').css({ height: $(window).height() + 100 });
 
 });
-
-
-function getWindowScrollY() {
-  if(window.scrollY !== undefined) {
-    return window.scrollY;
-  }
-  else {
-    return document.documentElement.scrollTop;
-  }
-}

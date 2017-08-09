@@ -39,7 +39,6 @@ hr {
 }
 
 .main-content {
-  height: 100vh;
   position: relative;
 }
 
@@ -50,10 +49,10 @@ hr {
 .intro-content-section {
   position: fixed;
   top: 0;
-  background: url("../resources/profile.png") no-repeat center;
+  background: url("../resources/profile-4.jpg") no-repeat center;
   background-size: cover;
-  height: 100%;
-  width: 50%;
+  height: 100vh;
+  width: 60%;
   color: white;
   @include transition(all 0.6s 0.2s);
 
@@ -85,7 +84,7 @@ hr {
   @include transition(all 0.6s);
 
   .bg-filter {
-    background: rgba(70,0,0, 0.7);
+    background: rgba(70,0,0, 0.8);
     @include transition(background 0.6s);
   }
 
@@ -111,7 +110,7 @@ hr {
   .content::before {
     content: '';
     display: inline-block;
-    width: 50%;
+    width: 60%;
     @include transition(all 0.6s 0.2s);
   }
 }
