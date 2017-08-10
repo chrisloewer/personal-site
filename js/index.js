@@ -35,9 +35,4 @@ window.addEventListener('load', function () {
   window.addEventListener('scroll', introScrollController, false);
   introScrollController();
 
-  // TODO handle the disappearing url nav bar on mobile devices
-  // Override resize of above-fold content for mobile devices - due to hiding url bar
-  // $('#intro-content').css({ height: $(window).height() + 100 });
-  // $('#intro-header').css({ height: $(window).height() + 100 });
-
 });
