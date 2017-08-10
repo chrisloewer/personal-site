@@ -84,7 +84,7 @@ hr {
   @include transition(all 0.6s);
 
   .bg-filter {
-    background: rgba(70,0,0, 0.8);
+    background: rgba(70,0,0, 0.85);
     @include transition(background 0.6s);
   }
 
@@ -144,8 +144,11 @@ hr {
 .vc-container::before {
   content: '';
   display: inline-block;
-  height: 100vh;
+  height: 100%;
   vertical-align: middle;
+}
+.header-section.vc-container::before {
+  height: 100vh;
 }
 .vc-content {
   position: relative;
