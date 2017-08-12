@@ -172,6 +172,28 @@ img.profile {
   padding-bottom: 30px;
 }
 
+.column-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  .column {
+    padding: 20px 0;
+
+    .skill-icon {
+      display: inline-block;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      background: #FFFFFF;
+      border: 2px solid black;
+      height: 200px;
+      width: 200px;
+    }
+  }
+}
+
 .project {
   display: flex;
   flex-direction: column;
@@ -220,6 +242,14 @@ img.profile {
     line-height: 20vh;
     background: url("../resources/pattern.png")  no-repeat fixed center;
     background-size: cover;
+  }
+
+  .column-container {
+    flex-direction: row;
+
+    .column {
+      max-width: 40%;
+    }
   }
 
   .project {
@@ -276,4 +306,10 @@ img.profile {
     max-width: 900px;
   }
 
+  .column-container {
+
+    .column {
+      width: 40%;
+    }
+  }
 }
