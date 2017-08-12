@@ -21,7 +21,7 @@ function getWindowScrollY() {
 window.addEventListener('load', function () {
 
   function introScrollController() {
-    var breakpoint = 300;
+    var breakpoint = 90;
     var currentPosition = getWindowScrollY();
 
     if(currentPosition > breakpoint) {

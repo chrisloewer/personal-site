@@ -43,7 +43,8 @@ hr {
 }
 
 .bg-section {
-  height: 250vh;
+  height: 200vh;
+  min-height: 400px;
 }
 
 .intro-content-section {
@@ -127,13 +128,13 @@ hr {
   z-index: 5;
 }
 
-.img-section {
+.sub-header-section {
   height: 15vh;
   line-height: 15vh;
-  background: #EEE;
-  background: url("../resources/pattern.png")  no-repeat fixed center;
-  background-size: cover;
+  background: #BBB;
   text-align: center;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
 }
 
 .content-section {
@@ -160,6 +161,15 @@ hr {
 }
 .center {
   text-align: center;
+}
+
+img.profile {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  width: 80%;
+  max-width: 320px;
+  padding-bottom: 30px;
 }
 
 .project {
@@ -205,13 +215,11 @@ hr {
     font-size: 3.5em;
   }
 
-  .img-section {
+  .sub-header-section {
     height: 20vh;
     line-height: 20vh;
-  }
-
-  .content-section {
-    padding: 200px 0;
+    background: url("../resources/pattern.png")  no-repeat fixed center;
+    background-size: cover;
   }
 
   .project {
@@ -262,10 +270,6 @@ hr {
 
   p {
     font-size: 1.2em;
-  }
-
-  .content-section {
-    padding: 250px 0;
   }
 
   .vc-content {
