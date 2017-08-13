@@ -226,6 +226,22 @@ img.profile {
   }
 }
 
+.social-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+
+  .social-icon {
+    width: 50px;
+    padding-right: 40px;
+  }
+  .link {
+    min-width: 200px;
+    text-align: left;
+  }
+}
+
 // Tablet and bigger
 // --------------------------------------------------------------------------------------------------------------
 @media (min-width: 650px) {
