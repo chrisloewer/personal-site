@@ -54,14 +54,14 @@ hr {
 }
 
 .bg-section {
-  height: 200vh;
+  height: 220vh;
   min-height: 400px;
 }
 
 .intro-content-section {
   position: fixed;
   top: 0;
-  background: url("../resources/profile-4.jpg") no-repeat center;
+  background: url("../resources/profile.jpg") no-repeat center;
   background-size: cover;
   height: 100vh;
   width: 60%;
@@ -213,6 +213,7 @@ img.profile {
     img {
       width: 100%;
       max-width: 320px;
+      background: #000;
     }
   }
 
