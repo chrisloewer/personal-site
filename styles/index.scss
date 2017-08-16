@@ -1,5 +1,8 @@
 @import "helpers";
 
+// COLORS
+$bg-color: #F5F5F5;
+
 // TODO use mixin for border-radius
 // TODO finalize colors for intro
 // TODO change colors to variables
@@ -7,16 +10,16 @@
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-  background: #EEE;
+  background: $bg-color;
 }
 
 h1, h2, h3, h4 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Playfair Display SC', serif;
   font-weight: 700;
 }
 
 .title {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Playfair Display SC', serif;
   font-size: 2em;
   font-weight: 700;
 }
@@ -28,6 +31,10 @@ p {
 
 a {
   color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
 }
 
 .italic {
@@ -142,7 +149,7 @@ hr {
 }
 
 .content-section {
-  background: #EEE;
+  background: $bg-color;
   padding: 100px 0;
 }
 
@@ -187,11 +194,6 @@ img.profile {
 
     .skill-icon {
       display: inline-block;
-      -webkit-border-radius: 50%;
-      -moz-border-radius: 50%;
-      border-radius: 50%;
-      background: #FFFFFF;
-      border: 2px solid black;
       height: 140px;
       width: 140px;
     }
