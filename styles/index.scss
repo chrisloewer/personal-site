@@ -1,7 +1,8 @@
 @import "helpers";
 
 // COLORS
-$bg-color: #F5F5F5;
+$bg-color: #FAF8FD;
+$alt-bg-color: #CDCAD4;
 
 // TODO use mixin for border-radius
 // TODO finalize colors for intro
@@ -151,6 +152,9 @@ hr {
 .content-section {
   background: $bg-color;
   padding: 100px 0;
+}
+.content-section:nth-of-type(2n-1) {
+  background: $alt-bg-color;
 }
 
 .vc-container::before {
