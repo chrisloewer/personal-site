@@ -148,6 +148,29 @@ hr {
   border-bottom: 3px solid black;
 }
 
+.img-section {
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  overflow: hidden;
+  height: 500px;
+  position: relative;
+  background-color: $bg-color;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+}
+.img-section#work-img {
+   background-image: url(../resources/mac.jpg);
+}
+.img-section#projects-img {
+   background-image: url(../resources/tea.jpg);
+}
+.img-section#connect-img {
+   background-image: url(../resources/typewriter.jpg);
+}
+
 .content-section {
   background: $bg-color;
   padding: 100px 0;
@@ -172,6 +195,10 @@ hr {
 }
 .center {
   text-align: center;
+}
+
+.border-top {
+  border-top: 3px solid black;
 }
 
 img.profile {

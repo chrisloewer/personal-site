@@ -34,5 +34,4 @@ window.addEventListener('load', function () {
 
   window.addEventListener('scroll', introScrollController, false);
   introScrollController();
-
 });
