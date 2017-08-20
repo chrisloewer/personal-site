@@ -1,7 +1,10 @@
 @import "helpers";
 
 // COLORS
-$bg-color: #F5F5F5;
+$off-white-color: #FAF8FD;
+$bg-color: #FAF8FD;
+$alt-bg-color: #CDCAD4;
+$dark-highlight-color: #514E58;
 
 // TODO use mixin for border-radius
 // TODO finalize colors for intro
@@ -10,7 +13,7 @@ $bg-color: #F5F5F5;
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-  background: $bg-color;
+  background: $off-white-color;
 }
 
 h1, h2, h3, h4 {
@@ -45,12 +48,13 @@ hr {
   border: 0;
   width: 50%;
   height: 2px;
-  background-color: #000000;
+  background-color: $dark-highlight-color;
   margin: 40px auto;
 }
 
 .main-content {
   position: relative;
+  overflow-x: hidden;
 }
 
 .bg-section {
@@ -151,6 +155,46 @@ hr {
 .content-section {
   background: $bg-color;
   padding: 100px 0;
+  position: relative;
+}
+.content-section:nth-of-type(2n-1) {
+  background: $alt-bg-color;
+}
+
+.slant-separator {
+  z-index: 10;
+
+  .vc-content {
+    // Adjust content spacing to center within slant
+    // Margin based on:  X = tan(slant-angle) * 100
+    margin: -3.5vw auto 3.5vw auto;
+  }
+}
+.slant-separator:before,
+.slant-separator:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: -25%;
+  z-index: -1;
+  width: 150%;
+  height: 100%;
+  background: inherit;
+  @include transform(rotate(2deg));
+  @include transform-origin(top right);
+}
+.slant-separator:before {
+  height: 50%;
+  background: $dark-highlight-color;
+  @include transform(rotate(3deg));
+}
+.slant-separator.alt-slant:before,
+.slant-separator.alt-slant:after {
+  @include transform(rotate(-2deg));
+  @include transform-origin(top left);
+}
+.slant-separator.alt-slant:before {
+  @include transform(rotate(-3deg));
 }
 
 .vc-container::before {
@@ -178,9 +222,10 @@ img.profile {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
+  @include shadow-standard;
   width: 80%;
   max-width: 320px;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .column-container {
@@ -214,6 +259,7 @@ img.profile {
       width: 100%;
       max-width: 320px;
       background: #000;
+      @include shadow-standard;
     }
   }
 
