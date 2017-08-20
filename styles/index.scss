@@ -3,7 +3,7 @@
 // COLORS
 $bg-color: #FAF8FD;
 $alt-bg-color: #CDCAD4;
-$dark-highlight-color: #514e58;
+$dark-highlight-color: #514E58;
 
 // TODO use mixin for border-radius
 // TODO finalize colors for intro
@@ -47,7 +47,7 @@ hr {
   border: 0;
   width: 50%;
   height: 2px;
-  background-color: #000000;
+  background-color: $dark-highlight-color;
   margin: 40px auto;
 }
 
@@ -221,9 +221,10 @@ img.profile {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
+  @include shadow-standard;
   width: 80%;
   max-width: 320px;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .column-container {
@@ -257,6 +258,7 @@ img.profile {
       width: 100%;
       max-width: 320px;
       background: #000;
+      @include shadow-standard;
     }
   }
 
