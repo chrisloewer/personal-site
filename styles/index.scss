@@ -3,6 +3,7 @@
 // COLORS
 $bg-color: #FAF8FD;
 $alt-bg-color: #CDCAD4;
+$dark-highlight-color: #514e58;
 
 // TODO use mixin for border-radius
 // TODO finalize colors for intro
@@ -52,6 +53,7 @@ hr {
 
 .main-content {
   position: relative;
+  overflow-x: hidden;
 }
 
 .bg-section {
@@ -152,9 +154,46 @@ hr {
 .content-section {
   background: $bg-color;
   padding: 100px 0;
+  position: relative;
 }
 .content-section:nth-of-type(2n-1) {
   background: $alt-bg-color;
+}
+
+.slant-separator {
+  z-index: 10;
+
+  .vc-content {
+    // Adjust content spacing to center within slant
+    // Margin based on:  X = tan(slant-angle) * 100
+    margin: -3.5vw auto 3.5vw auto;
+  }
+}
+.slant-separator:before,
+.slant-separator:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: -25%;
+  z-index: -1;
+  width: 150%;
+  height: 100%;
+  background: inherit;
+  @include transform(rotate(2deg));
+  @include transform-origin(top right);
+}
+.slant-separator:before {
+  height: 50%;
+  background: $dark-highlight-color;
+  @include transform(rotate(3deg));
+}
+.slant-separator.alt-slant:before,
+.slant-separator.alt-slant:after {
+  @include transform(rotate(-2deg));
+  @include transform-origin(top left);
+}
+.slant-separator.alt-slant:before {
+  @include transform(rotate(-3deg));
 }
 
 .vc-container::before {
