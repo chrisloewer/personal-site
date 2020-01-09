@@ -3,10 +3,10 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 
-gulp.task('styles', function() {
-  gulp.src('styles/*.scss')
+function formatStyles() {
+  return gulp.src('styles/*.scss')
       .pipe(sass().on('error', sass.logError))
       .pipe(gulp.dest('styles'));
-});
+}
 
-gulp.task('default', ['styles']);
+exports.default = formatStyles;

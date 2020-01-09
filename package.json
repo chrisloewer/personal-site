@@ -4,7 +4,9 @@
   "description": "Website to serve as an internet landing page for myself",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp"
+
   },
   "repository": {
     "type": "git",
@@ -16,9 +18,9 @@
     "url": "https://github.com/chrisloewer/personal-site/issues"
   },
   "homepage": "https://github.com/chrisloewer/personal-site#readme",
-  "dependencies": {},
-  "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-sass": "^3.1.0"
-  }
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^3.2.1"
+  },
+  "devDependencies": {}
 }
