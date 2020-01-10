@@ -76,6 +76,11 @@ hr {
   color: white;
   @include transition(all 0.6s 0.2s);
 
+  @media screen and (orientation:portrait) {
+    background: rgb(70,0,0) url("../resources/images/profile-portrait.jpg") no-repeat center;
+    background-size: cover;
+  }
+
   .bg-filter {
     z-index: 1;
     background: rgba(99,0,0, 0.2);
