@@ -9,4 +9,11 @@ function formatStyles() {
       .pipe(gulp.dest('styles'));
 }
 
+function watch() {
+  return gulp.watch('styles/*.scss', formatStyles);
+}
+
 exports.default = formatStyles;
+exports.formatStyles = formatStyles;
+exports.watch = watch;
+exports.buildAndWatch = gulp.series(formatStyles, watch);
