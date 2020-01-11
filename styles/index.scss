@@ -38,6 +38,10 @@ p {
 a {
   color: inherit;
   text-decoration: none;
+
+  &.underline {
+    text-decoration: underline;
+  }
 }
 a:hover {
   text-decoration: underline;
@@ -45,6 +49,18 @@ a:hover {
 
 .italic {
   font-style: italic;
+}
+
+.desktop-only {
+  display: none;
+  @media (min-width: 960px) {
+    display: inherit;
+  }
+}
+.mobile-only {
+  @media (min-width: 960px) {
+    display: none;
+  }
 }
 
 hr {
