@@ -3,8 +3,8 @@
 // COLORS
 $off-white-color: #F8F8F8;
 $bg-color: #F8F8F8;
-$alt-bg-color: #C0C5C5;
-$dark-highlight-color: #505755;
+$alt-bg-color: #C0C7C5;
+$dark-highlight-color: #525A55;
 $bg-filter-color: #0e2518;
 // $bg-filter-color: #153d27;
 
@@ -32,7 +32,7 @@ h1, h2, h3, h4 {
 
 p {
   font-size: 1em;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 a {
@@ -253,6 +253,10 @@ img.profile {
       display: inline-block;
       height: 140px;
       width: 140px;
+
+      + h3 {
+        margin-top: 0.5em;
+      }
     }
   }
 }
@@ -290,7 +294,7 @@ img.profile {
 
     .subtext {
       font-style: italic;
-      font-weight: 200;
+      font-weight: 400;
       font-size: 0.85em;
     }
   }
