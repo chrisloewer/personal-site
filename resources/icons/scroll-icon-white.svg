@@ -1,0 +1,54 @@
+<svg width="56.52878945542838" height="144.277862613737" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" version="1.1">
+ <defs>
+  <path id="b1FZ3Opk7v" d="m60.26,47.58c0,23.44 -12.66,42.46 -28.26,42.46c-15.6,0 -28.26,-19.02 -28.26,-42.46c0,-23.43 12.66,-42.45 28.26,-42.45c15.6,0 28.26,19.02 28.26,42.45z"/>
+  <path id="b1dhoKFPjM" d="m27.29,26.36c0,1.56 0,2.83 0,2.83c0,0 0,-1.27 0,-2.83c0,-1.57 0,-2.83 0,-2.83c0,0.56 0,1.26 0,2.83z"/>
+  <path id="a3TFBVlc" d="m31.9,20.07c1.38,0 2.5,1.12 2.5,2.5c0,2.58 0,7.82 0,10.4c0,1.38 -1.12,2.5 -2.5,2.5c-0.66,0 -0.14,0 -0.8,0c-1.38,0 -2.5,-1.12 -2.5,-2.5c0,-2.58 0,-7.82 0,-10.4c0,-1.38 1.12,-2.5 2.5,-2.5c0.66,0 0.14,0 0.8,0z"/>
+  <path id="d4xKR7ggSR" d="m18.59,106.01c0.72,-0.53 1.74,-0.36 2.27,0.36c2.66,3.67 9.67,13.36 12.33,17.02c0.53,0.73 0.37,1.75 -0.36,2.28c-0.27,0.19 0.26,-0.19 0,0c-0.73,0.53 -1.75,0.37 -2.28,-0.36c-2.66,-3.67 -9.67,-13.35 -12.33,-17.02c-0.53,-0.73 -0.36,-1.75 0.37,-2.28c0.26,-0.19 -0.27,0.19 0,0z"/>
+  <path id="berKt5qy" d="m45.41,105.83c-0.72,-0.53 -1.74,-0.37 -2.27,0.36c-2.66,3.67 -9.67,13.35 -12.33,17.02c-0.53,0.73 -0.37,1.75 0.36,2.28c0.27,0.19 -0.26,-0.19 0,0c0.73,0.53 1.75,0.36 2.28,-0.36c2.66,-3.67 9.67,-13.36 12.33,-17.02c0.53,-0.73 0.36,-1.75 -0.37,-2.28c-0.26,-0.19 0.27,0.19 0,0z"/>
+  <path id="b1Uywcpgg9" d="m18.59,129.44c0.72,-0.53 1.74,-0.37 2.27,0.36c2.66,3.67 9.67,13.35 12.33,17.02c0.53,0.73 0.37,1.75 -0.36,2.28c-0.27,0.19 0.26,-0.2 0,0c-0.73,0.52 -1.75,0.36 -2.28,-0.37c-2.66,-3.67 -9.67,-13.35 -12.33,-17.02c-0.53,-0.73 -0.36,-1.75 0.37,-2.27c0.26,-0.19 -0.27,0.19 0,0z"/>
+  <path id="fIUAFgZjk" d="m45.41,129.26c-0.72,-0.53 -1.74,-0.37 -2.27,0.36c-2.66,3.67 -9.67,13.35 -12.33,17.02c-0.53,0.73 -0.37,1.75 0.36,2.27c0.27,0.2 -0.26,-0.19 0,0c0.73,0.53 1.75,0.37 2.28,-0.36c2.66,-3.67 9.67,-13.35 12.33,-17.02c0.53,-0.73 0.36,-1.75 -0.37,-2.27c-0.26,-0.2 0.27,0.19 0,0z"/>
+ </defs>
+ <g>
+  <title>Layer 1</title>
+  <g stroke="null" id="svg_1">
+   <g stroke="null" id="svg_2">
+    <g stroke="null" id="svg_3">
+     <g stroke="null" id="svg_4">
+      <use transform="matrix(0.858457 0 0 0.858457 0.52937 0.726115)" x="0" y="0" stroke="#ffffff" id="svg_5" stroke-width="9" fill-opacity="0" xlink:href="#b1FZ3Opk7v"/>
+     </g>
+    </g>
+    <g stroke="null" id="svg_6"/>
+    <g stroke="null" id="svg_7">
+     <use transform="matrix(0.858457 0 0 0.858457 0.52937 0.726115)" x="0" y="0" stroke="null" id="svg_8" fill="#ffffff" xlink:href="#a3TFBVlc"/>
+     <g stroke="null" id="svg_9">
+      <use transform="matrix(0.858457 0 0 0.858457 0.52937 0.726115)" x="0" y="0" stroke="#ffffff" id="svg_10" stroke-width="4" fill-opacity="0" xlink:href="#a3TFBVlc"/>
+     </g>
+    </g>
+    <g stroke="null" id="svg_11">
+     <g stroke="null" id="svg_12">
+      <g stroke="null" id="svg_13">
+       <use transform="matrix(0.858457 0 0 0.858457 0.52937 0.726115)" x="0" y="0" stroke="#ffffff" id="svg_14" stroke-width="5" fill-opacity="0" xlink:href="#d4xKR7ggSR"/>
+      </g>
+     </g>
+     <g stroke="null" id="svg_15">
+      <g stroke="null" id="svg_16">
+       <use transform="matrix(0.858457 0 0 0.858457 0.52937 0.726115)" x="0" y="0" stroke="#ffffff" id="svg_17" stroke-width="5" fill-opacity="0" xlink:href="#berKt5qy"/>
+      </g>
+     </g>
+    </g>
+    <g stroke="null" id="svg_18">
+     <g stroke="null" id="svg_19">
+      <g stroke="null" id="svg_20">
+       <use transform="matrix(0.858457 0 0 0.858457 0.52937 0.726115)" x="0" y="0" stroke="#ffffff" id="svg_21" stroke-width="5" fill-opacity="0" xlink:href="#b1Uywcpgg9"/>
+      </g>
+     </g>
+     <g stroke="null" id="svg_22">
+      <g stroke="null" id="svg_23">
+       <use transform="matrix(0.858457 0 0 0.858457 0.52937 0.726115)" x="0" y="0" stroke="#ffffff" id="svg_24" stroke-width="5" fill-opacity="0" xlink:href="#fIUAFgZjk"/>
+      </g>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>

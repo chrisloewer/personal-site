@@ -80,6 +80,45 @@ hr {
   overflow-x: hidden;
 }
 
+.scroll-indicator-container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  .scroll-indicator {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+
+  .scroll-indicator__icon {
+    display: inline-block;
+    background: url(../resources//icons/scroll-icon-white.svg) no-repeat center;
+    background-size: contain;
+    margin: 20px;
+    width: 40px;
+    height: 40px;
+    animation: scroll-icon-resize 2s linear infinite;
+    // animation: name duration timing-function delay iteration-count direction fill-mode;
+
+    @media (min-width: 960px) {
+      width: 50px;
+      height: 50px;
+    }
+
+    @keyframes scroll-icon-resize {
+      0% {padding-top: 0; }
+      25% {padding-top: 5px; }
+      50% {padding-top: 0; }
+    }
+  }
+}
+
+// Blank filler container. Scrolling past this moves from splash picture into actual website content
 .bg-section {
   height: 200vh;
   min-height: 400px;
@@ -101,7 +140,7 @@ hr {
   @media screen and (orientation:landscape) {
     background: transparentize($bg-filter-color, 0.5) url("../resources/images/profile.jpg") no-repeat center;
     background-size: cover;
-    
+
     -webkit-box-shadow: inset -50px 0 36px -27px black;
     -moz-box-shadow: inset -50px 0 36px -27px black;
     box-shadow: inset -50px 0 36px -27px black;
