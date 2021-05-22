@@ -102,7 +102,7 @@ hr {
     margin: 20px;
     width: 40px;
     height: 40px;
-    animation: scroll-icon-resize 2s linear infinite;
+    animation: scroll-icon-resize 5s linear 2s infinite;
     // animation: name duration timing-function delay iteration-count direction fill-mode;
 
     @media (min-width: 960px) {
@@ -112,16 +112,20 @@ hr {
 
     @keyframes scroll-icon-resize {
       0% {padding-top: 0; }
-      25% {padding-top: 5px; }
-      50% {padding-top: 0; }
+      10% {padding-top: 5px; }
+      20% {padding-top: 0; }
     }
   }
 }
 
 // Blank filler container. Scrolling past this moves from splash picture into actual website content
 .bg-section {
-  height: 200vh;
+  height: 150vh;
   min-height: 400px;
+
+  @media (min-width: 650px) {
+    height: 200vh;
+  }
 }
 
 .intro-content-section {
